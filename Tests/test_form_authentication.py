@@ -31,9 +31,9 @@ def test_unvalid_login_valid_password(browser):
 def test_valid_login_unvalid_password(browser):
     page = FormAuthentication(browser, FormAuthenticationContent.link)
     page.open()
-    page.input_login(FormAuthenticationData.valid_login)  # вводим валидный номер
-    page.input_password(FormAuthenticationData.unvalid_password)  # вводим валидный пароль
-    page.click_login_button()  # кликаем по кнопке
+    page.input_login(FormAuthenticationData.valid_login)  #
+    page.input_password(FormAuthenticationData.unvalid_password)
+    page.click_login_button()
     page.should_stay_on_the_login_page()
     page.should_be_alert_invalid_password()
 
@@ -41,9 +41,9 @@ def test_valid_login_unvalid_password(browser):
 def test_empty_login_valid_password(browser):
     page = FormAuthentication(browser, FormAuthenticationContent.link)
     page.open()
-    page.input_login(FormAuthenticationData.empty_login)  # вводим валидный номер
-    page.input_password(FormAuthenticationData.valid_password)  # вводим валидный пароль
-    page.click_login_button()  # кликаем по кнопке
+    page.input_login(FormAuthenticationData.empty_login)
+    page.input_password(FormAuthenticationData.valid_password)
+    page.click_login_button()
     page.should_stay_on_the_login_page()
     page.should_be_alert_invalid_username()
 
@@ -51,8 +51,8 @@ def test_empty_login_valid_password(browser):
 def test_valid_login_empty_password(browser):
     page = FormAuthentication(browser, FormAuthenticationContent.link)
     page.open()
-    page.input_login(FormAuthenticationData.valid_login)  # вводим валидный номер
-    page.input_password(FormAuthenticationData.empty_password)  # вводим валидный пароль
-    page.click_login_button()  # кликаем по кнопке
+    page.input_login(FormAuthenticationData.valid_login)
+    page.input_password(FormAuthenticationData.empty_password)
+    page.click_login_button()
     page.should_stay_on_the_login_page()
     page.should_be_alert_invalid_password()
