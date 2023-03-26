@@ -1,4 +1,4 @@
-from methods import JavaScriptAlerts
+from pages.javascrip_alerts_page import JavaScriptAlerts
 from TestData.testdata import JavaScriptAlertsData
 from Content.content import JavaScriptAlertsContent
 

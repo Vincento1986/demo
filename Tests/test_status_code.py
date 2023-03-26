@@ -1,4 +1,4 @@
-from methods import StatusCode
+from pages.status_code_page import StatusCode
 from Content.content import StatusCodeContent
 
 

@@ -1,8 +1,6 @@
-from methods import FormAuthentication
+from pages.form_authentication_page import FormAuthentication
 from TestData.testdata import FormAuthenticationData
 from Content.content import FormAuthenticationContent
-
-link = "http://the-internet.herokuapp.com/login"
 
 
 def test_sucessfull_authentication(browser):

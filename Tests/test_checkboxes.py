@@ -1,4 +1,4 @@
-from methods import CheckBoxes
+from pages.checkboxes_page import CheckBoxes
 from Content.content import CheckboxContent
 
 
